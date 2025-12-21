@@ -354,24 +354,25 @@ public class n4
         int n=in.nextInt();
         if (n<10){
             out.println("NO");
-        }
-        int[] arr =new int[n];
-        for (int i=0;i<n;i++){
-            arr[i]=in.nextInt();
-        }
-        int[] dss = new int[101];
-        for (int i=0; i<n;i++){
-            dss[arr[i]]++;
-        }
-        boolean boo=false;
-        for (int j=10;j<=100;j++){
-            if (dss[j] == j) {
-                out.print(j+" ");
-                boo=true;
+        }else {
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = in.nextInt();
             }
-        }
-        if (!boo) {
-            out.println("NO");
+            int[] dss = new int[101];
+            for (int i = 0; i < n; i++) {
+                dss[arr[i]]++;
+            }
+            boolean boo = false;
+            for (int j = 10; j <= 100; j++) {
+                if (dss[j] == j) {
+                    out.print(j + " ");
+                    boo = true;
+                }
+            }
+            if (!boo) {
+                out.println("NO");
+            }
         }
     }
 }
