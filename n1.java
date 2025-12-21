@@ -1,6 +1,6 @@
 import java.io.PrintStream;
 import java.util.Scanner;
-public class Dis
+public class n1
 {
     public static Scanner in = new Scanner(System.in);
     public static PrintStream out = System.out;
