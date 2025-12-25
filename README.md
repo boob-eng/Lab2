@@ -268,7 +268,7 @@ public class n3
             if (p>Cap){
                 p=Cap;
                 y++;
-                break;
+                boo=false;
             }
             if (p<=prevP){
                 p=prevP;
